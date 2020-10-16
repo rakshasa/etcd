@@ -21,7 +21,7 @@ import (
 	"log"
 	"time"
 
-	"go.etcd.io/etcd/v3/clientv3"
+	"github.com/rakshasa/etcd/v3/clientv3"
 
 	"github.com/spf13/cobra"
 	"google.golang.org/grpc/codes"

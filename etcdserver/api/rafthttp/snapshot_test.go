@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"go.etcd.io/etcd/v3/etcdserver/api/snap"
-	"go.etcd.io/etcd/v3/pkg/types"
-	"go.etcd.io/etcd/v3/raft/raftpb"
+	"github.com/rakshasa/etcd/v3/etcdserver/api/snap"
+	"github.com/rakshasa/etcd/v3/pkg/types"
+	"github.com/rakshasa/etcd/v3/raft/raftpb"
 
 	"go.uber.org/zap"
 )

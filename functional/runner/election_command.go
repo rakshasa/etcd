@@ -19,7 +19,7 @@ import (
 	"errors"
 	"fmt"
 
-	"go.etcd.io/etcd/v3/clientv3/concurrency"
+	"github.com/rakshasa/etcd/v3/clientv3/concurrency"
 
 	"github.com/spf13/cobra"
 )

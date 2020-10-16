@@ -24,10 +24,10 @@ import (
 	"sync"
 	"time"
 
-	"go.etcd.io/etcd/v3/etcdserver/cindex"
-	pb "go.etcd.io/etcd/v3/etcdserver/etcdserverpb"
-	"go.etcd.io/etcd/v3/lease/leasepb"
-	"go.etcd.io/etcd/v3/mvcc/backend"
+	"github.com/rakshasa/etcd/v3/etcdserver/cindex"
+	pb "github.com/rakshasa/etcd/v3/etcdserver/etcdserverpb"
+	"github.com/rakshasa/etcd/v3/lease/leasepb"
+	"github.com/rakshasa/etcd/v3/mvcc/backend"
 	"go.uber.org/zap"
 )
 

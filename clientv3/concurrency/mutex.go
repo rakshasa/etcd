@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"sync"
 
-	v3 "go.etcd.io/etcd/v3/clientv3"
-	pb "go.etcd.io/etcd/v3/etcdserver/etcdserverpb"
+	v3 "github.com/rakshasa/etcd/v3/clientv3"
+	pb "github.com/rakshasa/etcd/v3/etcdserver/etcdserverpb"
 )
 
 // ErrLocked is returned by TryLock when Mutex is already locked by another session.

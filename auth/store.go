@@ -25,11 +25,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"go.etcd.io/etcd/v3/auth/authpb"
-	"go.etcd.io/etcd/v3/etcdserver/api/v3rpc/rpctypes"
-	"go.etcd.io/etcd/v3/etcdserver/cindex"
-	pb "go.etcd.io/etcd/v3/etcdserver/etcdserverpb"
-	"go.etcd.io/etcd/v3/mvcc/backend"
+	"github.com/rakshasa/etcd/v3/auth/authpb"
+	"github.com/rakshasa/etcd/v3/etcdserver/api/v3rpc/rpctypes"
+	"github.com/rakshasa/etcd/v3/etcdserver/cindex"
+	pb "github.com/rakshasa/etcd/v3/etcdserver/etcdserverpb"
+	"github.com/rakshasa/etcd/v3/mvcc/backend"
 
 	"go.uber.org/zap"
 	"golang.org/x/crypto/bcrypt"

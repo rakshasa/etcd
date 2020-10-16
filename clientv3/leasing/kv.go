@@ -20,11 +20,11 @@ import (
 	"sync"
 	"time"
 
-	v3 "go.etcd.io/etcd/v3/clientv3"
-	"go.etcd.io/etcd/v3/clientv3/concurrency"
-	"go.etcd.io/etcd/v3/etcdserver/api/v3rpc/rpctypes"
-	pb "go.etcd.io/etcd/v3/etcdserver/etcdserverpb"
-	"go.etcd.io/etcd/v3/mvcc/mvccpb"
+	v3 "github.com/rakshasa/etcd/v3/clientv3"
+	"github.com/rakshasa/etcd/v3/clientv3/concurrency"
+	"github.com/rakshasa/etcd/v3/etcdserver/api/v3rpc/rpctypes"
+	pb "github.com/rakshasa/etcd/v3/etcdserver/etcdserverpb"
+	"github.com/rakshasa/etcd/v3/mvcc/mvccpb"
 
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

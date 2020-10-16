@@ -17,8 +17,8 @@ package recipe
 import (
 	"context"
 
-	"go.etcd.io/etcd/v3/clientv3"
-	"go.etcd.io/etcd/v3/mvcc/mvccpb"
+	"github.com/rakshasa/etcd/v3/clientv3"
+	"github.com/rakshasa/etcd/v3/mvcc/mvccpb"
 )
 
 // WaitEvents waits on a key until it observes the given events and returns the final one.

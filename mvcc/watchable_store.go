@@ -18,11 +18,11 @@ import (
 	"sync"
 	"time"
 
-	"go.etcd.io/etcd/v3/etcdserver/cindex"
-	"go.etcd.io/etcd/v3/lease"
-	"go.etcd.io/etcd/v3/mvcc/backend"
-	"go.etcd.io/etcd/v3/mvcc/mvccpb"
-	"go.etcd.io/etcd/v3/pkg/traceutil"
+	"github.com/rakshasa/etcd/v3/etcdserver/cindex"
+	"github.com/rakshasa/etcd/v3/lease"
+	"github.com/rakshasa/etcd/v3/mvcc/backend"
+	"github.com/rakshasa/etcd/v3/mvcc/mvccpb"
+	"github.com/rakshasa/etcd/v3/pkg/traceutil"
 
 	"go.uber.org/zap"
 )

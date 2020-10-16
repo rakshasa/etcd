@@ -18,7 +18,7 @@ import (
 	"context"
 	"errors"
 
-	pb "go.etcd.io/etcd/v3/raft/raftpb"
+	pb "github.com/rakshasa/etcd/v3/raft/raftpb"
 )
 
 type SnapshotStatus int

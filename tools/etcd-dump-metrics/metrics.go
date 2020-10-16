@@ -22,7 +22,7 @@ import (
 	"strings"
 	"time"
 
-	"go.etcd.io/etcd/v3/pkg/transport"
+	"github.com/rakshasa/etcd/v3/pkg/transport"
 
 	"go.uber.org/zap"
 )

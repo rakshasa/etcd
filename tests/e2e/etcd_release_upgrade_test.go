@@ -21,9 +21,9 @@ import (
 	"testing"
 	"time"
 
-	"go.etcd.io/etcd/v3/pkg/fileutil"
-	"go.etcd.io/etcd/v3/pkg/testutil"
-	"go.etcd.io/etcd/v3/version"
+	"github.com/rakshasa/etcd/v3/pkg/fileutil"
+	"github.com/rakshasa/etcd/v3/pkg/testutil"
+	"github.com/rakshasa/etcd/v3/version"
 )
 
 // TestReleaseUpgrade ensures that changes to master branch does not affect

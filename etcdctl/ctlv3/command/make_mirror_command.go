@@ -23,10 +23,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"go.etcd.io/etcd/v3/clientv3"
-	"go.etcd.io/etcd/v3/clientv3/mirror"
-	"go.etcd.io/etcd/v3/etcdserver/api/v3rpc/rpctypes"
-	"go.etcd.io/etcd/v3/mvcc/mvccpb"
+	"github.com/rakshasa/etcd/v3/clientv3"
+	"github.com/rakshasa/etcd/v3/clientv3/mirror"
+	"github.com/rakshasa/etcd/v3/etcdserver/api/v3rpc/rpctypes"
+	"github.com/rakshasa/etcd/v3/mvcc/mvccpb"
 
 	"github.com/spf13/cobra"
 )

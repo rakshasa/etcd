@@ -22,11 +22,11 @@ import (
 	"strings"
 	"time"
 
-	"go.etcd.io/etcd/v3/clientv3"
-	"go.etcd.io/etcd/v3/clientv3/concurrency"
-	"go.etcd.io/etcd/v3/etcdserver/api/v2error"
-	"go.etcd.io/etcd/v3/etcdserver/api/v2store"
-	"go.etcd.io/etcd/v3/mvcc/mvccpb"
+	"github.com/rakshasa/etcd/v3/clientv3"
+	"github.com/rakshasa/etcd/v3/clientv3/concurrency"
+	"github.com/rakshasa/etcd/v3/etcdserver/api/v2error"
+	"github.com/rakshasa/etcd/v3/etcdserver/api/v2store"
+	"github.com/rakshasa/etcd/v3/mvcc/mvccpb"
 )
 
 // store implements the Store interface for V2 using

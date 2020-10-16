@@ -20,7 +20,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"go.etcd.io/etcd/v3/raft/raftpb"
+	"github.com/rakshasa/etcd/v3/raft/raftpb"
 )
 
 // Handler for a http based key-value store backed by raft

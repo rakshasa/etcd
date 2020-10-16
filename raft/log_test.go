@@ -18,7 +18,7 @@ import (
 	"reflect"
 	"testing"
 
-	pb "go.etcd.io/etcd/v3/raft/raftpb"
+	pb "github.com/rakshasa/etcd/v3/raft/raftpb"
 )
 
 func TestFindConflict(t *testing.T) {

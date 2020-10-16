@@ -22,7 +22,7 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	etcd "go.etcd.io/etcd/v3/clientv3"
+	etcd "github.com/rakshasa/etcd/v3/clientv3"
 )
 
 var ErrWatcherClosed = fmt.Errorf("naming: watch closed")

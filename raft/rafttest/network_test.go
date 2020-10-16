@@ -18,7 +18,7 @@ import (
 	"testing"
 	"time"
 
-	"go.etcd.io/etcd/v3/raft/raftpb"
+	"github.com/rakshasa/etcd/v3/raft/raftpb"
 )
 
 func TestNetworkDrop(t *testing.T) {

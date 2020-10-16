@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # set some environment variables
-ORG_PATH="go.etcd.io"
+ORG_PATH="github.com/rakshasa"
 REPO_PATH="${ORG_PATH}/etcd/v3"
 
 GIT_SHA=$(git rev-parse --short HEAD || echo "GitNotFound")

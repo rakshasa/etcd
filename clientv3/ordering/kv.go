@@ -18,7 +18,7 @@ import (
 	"context"
 	"sync"
 
-	"go.etcd.io/etcd/v3/clientv3"
+	"github.com/rakshasa/etcd/v3/clientv3"
 )
 
 // kvOrdering ensures that serialized requests do not return

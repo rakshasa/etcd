@@ -18,7 +18,7 @@ import (
 	"bytes"
 	"fmt"
 	"github.com/coreos/go-semver/semver"
-	"go.etcd.io/etcd/v3/version"
+	"github.com/rakshasa/etcd/v3/version"
 	"go.uber.org/zap"
 	"io/ioutil"
 	"os"

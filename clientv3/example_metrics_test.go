@@ -23,7 +23,7 @@ import (
 	"net/http"
 	"strings"
 
-	"go.etcd.io/etcd/v3/clientv3"
+	"github.com/rakshasa/etcd/v3/clientv3"
 
 	grpcprom "github.com/grpc-ecosystem/go-grpc-prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"

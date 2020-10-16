@@ -68,7 +68,7 @@ popd
 
 for dir in ${DIRS}; do
 	pushd "${dir}"
-		protoc --gofast_out=plugins=grpc,import_prefix=go.etcd.io/:. -I=".:${GOGOPROTO_PATH}:${ETCD_IO_ROOT}:${GRPC_GATEWAY_ROOT}/third_party/googleapis" ./*.proto
+		protoc --gofast_out=plugins=grpc,import_prefix=github.com/rakshasa/:. -I=".:${GOGOPROTO_PATH}:${ETCD_IO_ROOT}:${GRPC_GATEWAY_ROOT}/third_party/googleapis" ./*.proto
 		# shellcheck disable=SC1117
 		sed -i.bak -E 's/go\.etcd\.io\/(gogoproto|github\.com|golang\.org|google\.golang\.org)/\1/g' ./*.pb.go
 		# shellcheck disable=SC1117
@@ -113,7 +113,7 @@ for pb in etcdserverpb/rpc api/v3lock/v3lockpb/v3lock api/v3election/v3electionp
 	sed -i.bak -E "s/New[A-Za-z]*Client/${pkg}.&/" ${gwfile}
 	# darwin doesn't like newlines in sed...
 	# shellcheck disable=SC1117
-	sed -i.bak -E "s|import \(|& \"go.etcd.io/etcd/v3/${pkgpath}\"|" ${gwfile}
+	sed -i.bak -E "s|import \(|& \"github.com/rakshasa/etcd/v3/${pkgpath}\"|" ${gwfile}
 	# shellcheck disable=SC1117
 	sed -i.bak -E "s/go.etcd.io\etcd\//go.etcd.io\/etcd\/v3/" ${gwfile}
 	mkdir -p  "${pkgpath}"/gw/
@@ -135,16 +135,16 @@ popd
 schwag -input=Documentation/dev-guide/apispec/swagger/rpc.swagger.json
 
 # install protodoc
-# go get -v -u go.etcd.io/protodoc
+# go get -v -u github.com/rakshasa/protodoc
 #
 # run './scripts/genproto.sh --skip-protodoc'
 # to skip protodoc generation
 #
 if [ "$1" != "--skip-protodoc" ]; then
 	echo "protodoc is auto-generating grpc API reference documentation..."
-	go get -v -u go.etcd.io/protodoc
+	go get -v -u github.com/rakshasa/protodoc
 	SHA_PROTODOC="484ab544e116302a9a6021cc7c427d334132e94a"
-	PROTODOC_PATH="${GOPATH}/src/go.etcd.io/protodoc"
+	PROTODOC_PATH="${GOPATH}/src/github.com/rakshasa/protodoc"
 	pushd "${PROTODOC_PATH}"
 		git reset --hard "${SHA_PROTODOC}"
 		go install

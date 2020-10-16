@@ -18,7 +18,7 @@ import (
 	"bytes"
 	"context"
 
-	"go.etcd.io/etcd/v3/clientv3"
+	"github.com/rakshasa/etcd/v3/clientv3"
 )
 
 type leasePrefix struct {
